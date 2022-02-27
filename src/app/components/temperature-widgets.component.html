@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-body">
+    <h2>{{ weatherData.name }}</h2>
+    <div class="card-text">
+      Temperature: {{ weatherData.main.temp | temp }}<sup>0</sup>C
+    </div>
+    <div class="card-text">Humidity: {{ weatherData.main.humidity }}%</div>
+    <div class="card-text">
+      Chances of Rain: {{ weatherData.weather[0].description }}
+    </div>
+  </div>
+</div>
